@@ -121,7 +121,7 @@ post '/create_intent' do
   begin
     payment_intent = create_payment_intent(
       params[:amount],
-      nil,
+      params[:source],
       nil,
       nil,
       params[:metadata],

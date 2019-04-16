@@ -123,7 +123,7 @@ post '/create_intent' do
       params[:amount],
       params[:source],
       nil,
-      nil,
+      params[:customer],
       params[:metadata],
       params[:currency],
       nil
